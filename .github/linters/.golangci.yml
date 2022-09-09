@@ -1,0 +1,8 @@
+linters:
+  enable-all: true
+  disable:
+    - godox
+    - scopelint
+  fast: true
+output:
+  format: github-actions
