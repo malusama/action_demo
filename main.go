@@ -1,18 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"log"
+)
 
 func add(x, y int) int {
 	return x + y
 }
 
 func main() {
-	fmt.Println("hello world")
+	log.Println("hello world")
 
-	arr := []int{}
-	for i := 0; i < 10; i++ {
-		arr = append(arr, i)
+	ret_xx := []int{1, 2, 3, 4}
+	for v := range []int{1, 2, 3} {
+		ret_xx = append(ret_xx, v)
 	}
 
-	fmt.Printf("%v", arr)
+	log.Printf("%v", ret_xx)
 }
