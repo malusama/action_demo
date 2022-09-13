@@ -1,7 +1,7 @@
 name: lint
-on: [push]
+on: push
 jobs:
-  build:
+  lint:
     name: go-lint
     runs-on: ubuntu-latest
     steps:
@@ -9,9 +9,5 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: '>=1.17.0'
-      - name: lint
-        uses: github/super-linter/slim@v4
-        env:
-          VALIDATE_GO: true
-          VALIDATE_ALL_CODEBASE: false
-          USE_FIND_ALGORITHM: true
+      - name: Run golangci-lint
+        uses: golangci/golangci-lint-action@v3.2.0
