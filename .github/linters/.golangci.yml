@@ -1,0 +1,11 @@
+linters:
+  enable-all: true
+  disable:
+    - godox
+    - scopelint
+    - testpackage
+    - wsl
+    - nlreturn
+  fast: true
+output:
+  format: github-actions
