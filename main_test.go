@@ -1,4 +1,4 @@
-package main_test
+package main
 
 import (
 	"testing"
@@ -29,7 +29,7 @@ func TestAdd(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			assert.Equal(t, tt.result, add(tt.args.x, tt.args.y))
+			assert.Equal(t, tt.result, Add(tt.args.x, tt.args.y))
 		})
 	}
 }
