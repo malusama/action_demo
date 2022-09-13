@@ -3,6 +3,7 @@ linters:
   disable:
     - godox
     - scopelint
+    - testpackage
   fast: true
 output:
   format: github-actions
