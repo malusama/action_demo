@@ -30,8 +30,11 @@ func TestAdd(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			t.Parallel()
-			assert.Equal(t, tt.result, Add(tt.args.x, tt.args.y))
+			assert.Equal(t, tt.result, func() int {
+				t.Parallel()
+				ret := Add(tt.args.x, tt.args.y)
+				return ret
+			}())
 		})
 	}
 }
