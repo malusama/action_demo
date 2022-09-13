@@ -11,7 +11,7 @@ func add(x, y int) int {
 func main() {
 	log.Println("hello world")
 
-	a := []int{1, 2, 3, 4}
+	a := []int{}
 	for v := range []int{1, 2, 3} {
 		a = append(a, v)
 	}
