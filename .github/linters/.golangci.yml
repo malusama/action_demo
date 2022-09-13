@@ -4,6 +4,7 @@ linters:
     - godox
     - scopelint
     - testpackage
+    - wsl
   fast: true
 output:
   format: github-actions
