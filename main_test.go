@@ -29,8 +29,9 @@ func TestAdd(t *testing.T) {
 		},
 	}
 	for _, tt := range tests {
+		tt := tt
+
 		t.Run(tt.name, func(t *testing.T) {
-			tt := tt
 			assert.Equal(t, tt.result, func() int {
 				t.Parallel()
 				return Add(tt.args.x, tt.args.y)
