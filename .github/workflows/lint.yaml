@@ -9,7 +9,9 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: '>=1.17.0'
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@v3.2.0
-        with:
-          skip-cache: true
+      - name: lint
+        uses: github/super-linter/slim@v4
+        env:
+          VALIDATE_GO: true
+          VALIDATE_ALL_CODEBASE: false
+          USE_FIND_ALGORITHM: true
