@@ -11,10 +11,10 @@ func add(x, y int) int {
 func main() {
 	log.Println("hello world")
 
-	ret_xx := []int{1, 2, 3, 4}
+	a := []int{1, 2, 3, 4}
 	for v := range []int{1, 2, 3} {
-		ret_xx = append(ret_xx, v)
+		a = append(a, v)
 	}
 
-	log.Printf("%v", ret_xx)
+	log.Printf("%v", a)
 }
