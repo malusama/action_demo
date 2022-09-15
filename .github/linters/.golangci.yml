@@ -19,9 +19,6 @@ linters:
     - nestif
     - gci
     - gochecknoglobals
-    - maintidx
-    - nosnakecase
-    - containedctx
     - godot
   fast: true
 output:
