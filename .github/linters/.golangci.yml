@@ -1,11 +1,25 @@
 linters:
   enable-all: true
   disable:
-    - godox
-    - scopelint
-    - testpackage
+    - ifshort
     - wsl
+    - lll
+    - godox
+    - funlen
     - nlreturn
+    - gofumpt
+    - scopelint
+    - gocognit
+    - gomnd
+    - dupl
+    - tagliatelle
+    - goconst
+    - gocyclo
+    - testpackage
+    - nestif
+    - gci
+    - gochecknoglobals
+    - godot
   fast: true
 output:
   format: github-actions

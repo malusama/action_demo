@@ -10,11 +10,11 @@ func Add(x, y int) int {
 
 func main() {
 	log.Println("hello world")
+	existing := make([]int64, 10, 10)
 
-	a := []int{}
-	for v := range []int{1, 2, 3} {
-		a = append(a, v)
+	var init []int64
+	for _, element := range existing {
+		init = append(init, element)
 	}
-
-	log.Printf("%v", a)
+	log.Printf("%v", init)
 }
