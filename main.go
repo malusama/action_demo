@@ -9,7 +9,7 @@ func Add(x, y int) int {
 }
 
 func main() {
-	log.Println("hello world")
+	log.Println("hello world  ")
 
 	a := []int{}
 	for v := range []int{1, 2, 3} {
